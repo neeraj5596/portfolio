@@ -1,9 +1,10 @@
+/* General styles */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  scroll-behavior: smooth;
   background: #0f2027;
   color: white;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -37,16 +38,204 @@ nav a {
   text-align: center;
 }
 
+/* About section */
+#about {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #1a1a1a;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 255, 204, 0.1);
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+#about h2 {
+  font-size: 2rem;
+  color: #00ffcc;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.profile-pic {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid #00ffcc;
+  margin-bottom: 20px;
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
+}
+
+/* Skills section */
+#skills {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #1a1a1a;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 255, 204, 0.1);
+  text-align: center;
+  margin-top: 50px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+#skills h2 {
+  color: #00ffcc;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+}
+
+.skill {
+  background-color: #111;
+  padding: 15px 10px;
+  border-radius: 10px;
+  border: 1px solid #00ffcc50;
+  color: #00ffcc;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,255,204,0.2);
+  transition: transform 0.3s ease;
+}
+
+.skill:hover {
+  transform: scale(1.05);
+}
+
+/* Contact section */
+#contact {
+  max-width: 800px;
+  margin: 80px auto 0;
+  background: #1a1a1a;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 255, 204, 0.1);
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+#contact h2 {
+  color: #00ffcc;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+#contact p {
+  color: #ccc;
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.contact-info a {
+  color: #00ffcc;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Projects section */
 .project {
   background: #1a1a1a;
   padding: 20px;
-  margin: 20px;
+  margin: 20px auto;
   border-radius: 12px;
   box-shadow: 0 0 12px rgba(0,255,204,0.2);
+  max-width: 700px;
+}
+
+/* Experience section */
+#experience {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #1a1a1a;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 255, 204, 0.1);
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+#experience h2 {
+  font-size: 2rem;
+  color: #00ffcc;
+  margin-bottom: 20px;
+}
+
+#experience p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* Education section */
+#education {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #1a1a1a;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 255, 204, 0.1);
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+#education h2 {
+  font-size: 2rem;
+  color: #00ffcc;
+  margin-bottom: 20px;
+}
+
+#education p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* Certifications section */
+#certifications {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #1a1a1a;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 255, 204, 0.1);
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+#certifications h2 {
+  font-size: 2rem;
+  color: #00ffcc;
+  margin-bottom: 20px;
+}
+
+#certifications p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ccc;
 }
 
 footer {
   background: #111;
   padding: 20px;
   text-align: center;
+  color: #888;
+  margin-top: 50px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
 }
